@@ -49,7 +49,12 @@ $(document).ready(function(){
         // $("#inputForm").validate({});
         // alert("The text has been changed.");
         $("#inputForm").validate(
-            {
+            {                
+                errorPlacement: function(label, element) {
+                    label.addClass('err');
+                    label.insertAfter(element);
+                },
+                wrapper: 'div',
                 rules : {
                     mincol: {
                         required: true,
