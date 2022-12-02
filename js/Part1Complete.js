@@ -49,12 +49,12 @@ $(document).ready(function(){
         // $("#inputForm").validate({});
         // alert("The text has been changed.");
         $("#inputForm").validate(
-            {                
+            {               
                 errorPlacement: function(label, element) {
-                    label.addClass('err');
-                    label.insertAfter(element);
-                },
-                wrapper: 'div',
+                label.addClass('err');
+                label.insertAfter(element);
+            },
+            wrapper: 'div',
                 rules : {
                     mincol: {
                         required: true,
@@ -109,6 +109,7 @@ $(document).ready(function(){
     });
 
     $("#inputForm").on ('submit', function(e){
+        if($("#inputForm").valid()){   
     console.log('OUT');
     mincol = document.getElementById('mincol');
     maxcol = document.getElementById('maxcol');
@@ -139,6 +140,7 @@ $(document).ready(function(){
         tableHolder.style.visibility = "visible";
         multTable.innerHTML = build;
     }
+}
     });
     
 
