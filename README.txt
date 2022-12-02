@@ -12,4 +12,4 @@ I used JS learned in class and through documentation to create a dynamic and res
 HW3MultiplicationTable based on user input. Implemented Slider and tab functionality
 
 https://github.com/TheoOP/MultTablePart1/
-https://theoop.github.io/ResponsiveMultTable/
+https://theoop.github.io/MultTablePart1/
